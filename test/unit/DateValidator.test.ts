@@ -1,9 +1,10 @@
-import { FactoryDateValidator, DateValidator } from '../../src/Date';
+import { Factory } from '../../src';
+import { DateValidator } from './../../src/Date';
 
 let date:DateValidator;
 
 beforeAll(() => {
-    date = new FactoryDateValidator().factoryMethod();
+    date = Factory(DateValidator);
 })
 describe('Class DateValidator', () => {
     test('Should return true if data is not a date', () => {

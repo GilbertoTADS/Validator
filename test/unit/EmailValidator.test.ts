@@ -1,12 +1,9 @@
-export class EmailValidator{
-    constructor(){}
-    public isEmail(email:string):boolean{
-        return /[a-z]+\@[a-z]+\.[a-z]+/g.test(email);
-    }
-}
+import { Factory } from '../../src';
+import { EmailValidator } from './../../src/Email';
+
 let email:EmailValidator;
 beforeAll(() =>{
-    email = new EmailValidator();
+    email = Factory(EmailValidator);
 })
 describe('Class EmailValidator', () => {
     test('Must return true if data is email', () => {

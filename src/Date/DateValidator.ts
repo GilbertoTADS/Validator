@@ -1,11 +1,8 @@
-import { AFactory } from "./AFactory";
+import { FactoryDateValidator } from "./FactoryDateValidator";
 
-export class DateValidator extends AFactory{
+export class DateValidator extends FactoryDateValidator{
     constructor(){
-        super()
-    }
-    factoryMethod():DateValidator{
-        return new DateValidator()
+        super();
     }
     public isDate(date:string):boolean{
         if(!date) return false;
