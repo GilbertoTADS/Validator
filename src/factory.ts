@@ -1,4 +1,6 @@
 export function Factory(Class:any){
-    const factory = new Class();
+    console.log(typeof Class)
+    const factory:typeof Class = new Class();
+    console.log('object -> ',factory , 'Class ->', Class);
     return factory.factoryMethod();
 }

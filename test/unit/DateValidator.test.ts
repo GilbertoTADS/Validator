@@ -1,8 +1,6 @@
-import { Factory } from '../../src';
-import { DateValidator } from './../../src/Date';
+import { Factory,DateValidator } from '../../src';
 
 let date:DateValidator;
-
 beforeAll(() => {
     date = Factory(DateValidator);
 })
@@ -20,7 +18,7 @@ describe('Class DateValidator', () => {
         const res2:boolean = date.isDate(' /  /    ');
         const res3:boolean = date.isDate('../../....');
         const res4:boolean = date.isDate('@@/@@/@@@@');
-        const res5:boolean = date.isDate('d6vf5/d8fgws)-3/w7+w09fg0r9g');
+        const res5:boolean = date.isDate('d6vf5/d8fawns)-3/w7+w09fg0r9g');
         expect(false).toBe(res);
         expect(false).toBe(res2);
         expect(false).toBe(res3);

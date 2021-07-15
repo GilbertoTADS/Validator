@@ -1,6 +1,9 @@
 import { FactoryCPFValidator } from "./FactoryCPFValidator";
 
 export class CPFValidator extends FactoryCPFValidator{
+  constructor(){
+    super()
+  }
   isCPF(cpf:string):boolean{
     if(!cpf) return false;
     return /[\d]{3}\.[\d]{3}\.[\d]{3}\-[\d]{2}/.test(cpf);      

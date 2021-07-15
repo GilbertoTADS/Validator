@@ -1,4 +1,4 @@
-import { Factory } from '../../src';
+import { Factory, FactoryEmailValidator } from '../../src';
 import { EmailValidator } from './../../src/Email';
 
 let email:EmailValidator;
