@@ -3,5 +3,5 @@ import { FactoryDateValidator } from "./FactoryDateValidator";
 
 export { 
     FactoryDateValidator,
-    DateValidator 
+    DateValidator,
 }
